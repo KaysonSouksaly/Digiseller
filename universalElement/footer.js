@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <a onclick="notExist()">Career</a>
                     <a onclick="notExist()">The team</a>
                 </div>
-                <img src="./imgs/Digiseller.png" alt="logo">
+                <img src="./Imgs/Digiseller.png" alt="logo">
             </div>
             <div class="bottom-footer">
                 <p>©2024 Digiseller by Kayson Souksaly</p>

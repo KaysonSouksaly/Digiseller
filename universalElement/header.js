@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerHTML = `
         <header>
             <div class="logo">
-                <img src="./imgs/Digiseller.png" alt="logo">
+                <img src="./Imgs/Digiseller.png" alt="logo">
                 <i class="fa-brands fa-square-facebook"></i>
                 <i class="fa-brands fa-square-instagram"></i>
                 <i class="fa-brands fa-square-github"></i>
