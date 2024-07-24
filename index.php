@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./imgs/Digiseller.png">
+    <link rel="icon" href="./Imgs/Digiseller.png">
     <title>Digiseller</title>
     <!-- JS CODE -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -17,18 +17,19 @@
     <script src="https://kit.fontawesome.com/7daddba741.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/CSS.css">
+    <link rel="stylesheet" href="./CSS/special-design.css">
 </head>
 <body>
-    <?php include("./HeaderFooter/header.php");?>
+    <script src="header.js"></script>
     <main>
         <section class="masthead">
             <div class="cover">
-                <h1>Digiseller</h1>
-                <h2>Online chat and learning platform for aspiring entrepreneur and programmers</h2>
+                <h1 class="masthead-title">Digiseller</h1>
+                <h2>Online chat and learning platform for aspiring entrepreneurs and programmers</h2>
             </div>
         </section>
         <section class="gallery">
-            <button onclick="back()"><p>&lt;</p></button>
+            <button onclick="back()">&lt;</button>
             <div class="content-gallery">
                 <h1 class="whats-new">What's New</h1>
                 <div class="content">
@@ -112,7 +113,7 @@
                     <input id="tab-4" type="radio" name="tabs">
                 </div>
             </div>
-            <button onclick="next()"><p>&gt;</p></button>
+            <button onclick="next()">&gt;</button>
         </section>
         <section class="empty-space-1">
             <div></div>
@@ -123,7 +124,7 @@
         </section>
         <section id="about-us">
             <div class="image-box">
-                <img src="./imgs/consulting.jpg" alt="consulting">
+                <img src="./Imgs/consulting.jpg" alt="consulting">
             </div>
             <div class="description box-1">
                 <h1>ABOUT US</h1>
@@ -149,7 +150,7 @@
                 </p>
             </div>
             <div class="image-box">
-                <img src="./imgs/community.jpg" alt="community">
+                <img src="./Imgs/community.jpg" alt="community">
             </div>
         </section>
         <section class="empty-space-2">
@@ -161,14 +162,14 @@
         </section>
         <section id="event">
             <div class="image-box">
-                <img src="./imgs/seminar-real-photo.jpg" alt="Photo of a seminar">
-                <img src="./imgs/webinar.jpg" alt="webinar">
+                <img src="./Imgs/seminar-real-photo.jpg" alt="Photo of a seminar">
+                <img src="./Imgs/webinar.jpg" alt="webinar">
             </div>
             <div class="description">
                 <h1>EVENTS</h1>
                 <p>
                     Digiseller is proud to announce its first free seminar from a recurring monthly program! 
-                    The seminar will take place on September 30th, 2024, from 2 PM to 4 PM, and it will take 
+                    The seminar will take place on September 30<sup>th</sup>, 2024, from 2 PM to 4 PM, and it will take 
                     place both online and in person at 3406 Innisfil Beach Rd. <br><br>
                     Seminar topics will include:
                 </p>
@@ -207,25 +208,33 @@
                 <p>Operating Hours: 9:00AM-8:00PM Mon-Sat | Closed Sunday</p>
             </div>
             <div class="description">
-                <h2>Want to be informed?</h2>
-                <p>Subscribe to our newsletter!</p>
-                <form>
-                    <input type="email" placeholder="Email">
-                    <input type="button" onclick="notExist()" value="SUBSCRIBE" id="btn">
+                <form class="newsletter">
+                    <div class="form-header">
+                        <h1>Wanna Stay Updated?</h1>
+                        <h2>Subscribe to our newsletter!</h2>
+                    </div>
+                    <label for="email">Email</label>
+                    <input id="email-newsletter" type="email" placeholder="Your email...">
+                    <input type="button" onclick="notExist()" value="SUBSCRIBE" class="btn-form">
                 </form>
             </div>
             <div class="description">
-                <h2>Have a question?</h2>
                 <form>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="subject">
-                    <p><textarea name="" id="" cols="35" rows="10" placeholder="Message"></textarea></p>
-                    <input type="submit" value="SEND" onclick="notExist()" id="btn">
+                    <div class="form-header"><h1>Have a question?</h1></div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your name...">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Your email...">
+                    <label for="reason">Reason</label>
+                    <input id="reason" type="text" placeholder="Reason">
+                    <label for="message">Message</label>
+                    <p class="text"><textarea id="message" placeholder="Your message..."></textarea></p>
+                    <input type="submit" value="SEND" onclick="notExist()" class="btn-form">
                 </form>
             </div>
         </section>
+        <script src="advertisement.js"></script>
     </main>
-    <?php include("./HeaderFooter/footer.php");?>
+    <script src="footer.js"></script>
 </body>
 </html>

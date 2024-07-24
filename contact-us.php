@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./imgs/Digiseller.png">
+    <link rel="icon" href="./Imgs/Digiseller.png">
     <title>Pricing</title>
     <!-- JS CODE -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -17,10 +17,47 @@
     <script src="https://kit.fontawesome.com/7daddba741.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/CSS.css">
+    <link rel="stylesheet" href="./CSS/special-design.css">
 </head>
 <body>
-    <?php include("./HeaderFooter/header.php");?>
-    <main></main>
-    <?php include("./HeaderFooter/footer.php");?>
+<script src="header.js"></script>
+    <main>
+        <section class="contact-us-masthead">
+            <div class="cover">
+                <h1 class="masthead-title">
+                    CONTACT US
+                </h1>
+            </div>
+        </section>
+        <section class="contact-page">
+            <div class="contact-top-art image-box"> 
+            </div>
+            <div class="description box-1">
+                <h1>Contact Us</h1>
+                <p><i class="fa-solid fa-phone"></i>(705)-335-4355</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>102 Mapleview Dr, Barrie, ON 1T5 2D4</p>
+                <p>Operating Hours: 9:00AM-8:00PM Mon-Sat | Closed Sunday</p>
+            </div>
+            <div class="image-box box-1">
+                <img src="./Imgs/map.png" alt="map">
+            </div>
+            <div class="description box-2">
+                <form>
+                    <div class="form-header"><h1>Have a question?</h1></div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your name...">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Your email...">
+                    <label for="reason">Reason</label>
+                    <input id="reason" type="text" placeholder="Reason">
+                    <label for="message">Message</label>
+                    <p class="text"><textarea id="message" placeholder="Your message..."></textarea></p>
+                    <input type="submit" value="SEND" onclick="notExist()" class="btn-form">
+                </form>
+            </div>
+        </section>
+        <script src="advertisement.js"></script>
+    </main>
+    <script src="footer.js"></script>
 </body>
 </html>
