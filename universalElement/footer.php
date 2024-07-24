@@ -38,4 +38,4 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
 
     document.body.insertAdjacentHTML('beforeend', footerHTML);
-});\
+});
